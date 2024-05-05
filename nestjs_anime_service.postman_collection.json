@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "1408c4be-6c34-4982-b785-e8cbd5012f7f",
+		"name": "nestjs_anime_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17716024",
+		"_collection_link": "https://grey-shadow-803742.postman.co/workspace/Pac_API~e1f10a34-a39f-45c7-8959-9a9783245e6a/collection/17716024-1408c4be-6c34-4982-b785-e8cbd5012f7f?action=share&source=collection_link&creator=17716024"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/user"
+					},
+					"response": []
+				},
+				{
+					"name": "user_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/user/11ed6357-722c-42ba-a3b3-9992ef7f298f"
+					},
+					"response": []
+				},
+				{
+					"name": "create_user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"login\": \"testlogin\",\n    \"password\": \"passs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_user_by_id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/user/11ed6357-722c-42ba-a3b3-9992ef7f298f"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "studio",
+			"item": [
+				{
+					"name": "studios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/studio"
+					},
+					"response": []
+				},
+				{
+					"name": "studio_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/studio/80b06d0d-562a-4a49-b1f7-8d757004031d"
+					},
+					"response": []
+				},
+				{
+					"name": "create_new_studio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"example3\",\n    \"website\": \"https://example22.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/studio"
+					},
+					"response": []
+				},
+				{
+					"name": "update_studio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"example5\",\n    \"website\": \"https://example555.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/studio/80b06d0d-562a-4a49-b1f7-8d757004031d"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_studio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/studio/b17ddef1-96ca-4008-abb6-db681d60adae"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chapter",
+			"item": [
+				{
+					"name": "chapters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/chapter"
+					},
+					"response": []
+				},
+				{
+					"name": "chapter_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/chapter/d5e5b94b-7ca2-4dd2-9a79-6537c953ae43"
+					},
+					"response": []
+				},
+				{
+					"name": "create_new_chapter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"name2\",\n    \"studioId\": \"b17ddef1-96ca-4008-abb6-db681d60adae\",\n    \"animeId\": \"b98abc96-3d0f-41ea-8403-7af7448bb58a\",\n    \"duration\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/chapter"
+					},
+					"response": []
+				},
+				{
+					"name": "update_chapter",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"hahhajaaa\",\n    \"studioId\": \"e0d92eae-b6e9-428c-9777-38b399d4dc37\",\n    \"animeId\": \"dca35f29-2b84-41b4-99ba-8d3542604eed\",\n    \"duration\": 120\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/chapter/1b03221a-f550-4f93-ace0-c75ab132bf21"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_chapter",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/chapter/60c30a7c-3a70-4033-b1a0-ee6e040f4f74"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "anime",
+			"item": [
+				{
+					"name": "anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/anime"
+					},
+					"response": []
+				},
+				{
+					"name": "anime_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/anime/7502fb20-f65e-4807-8d3a-f08805ec5b0a"
+					},
+					"response": []
+				},
+				{
+					"name": "create_anime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"string\",\n    \"year\": 2002,\n    \"studioId\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/anime"
+					},
+					"response": []
+				},
+				{
+					"name": "update_anime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"string\",\n    \"year\": 2002,\n    \"studioId\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/anime"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_anime",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/anime/b98abc96-3d0f-41ea-8403-7af7448bb58a"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
